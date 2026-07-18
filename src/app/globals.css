@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --petroleum: #0f3b4d;
+  --petroleum-dark: #082530;
+  --petroleum-light: #1a5570;
+  --copper: #b8733d;
+  --copper-light: #d4904d;
+  --copper-dark: #8f5628;
+  --teal: #3fa9b8;
+  --teal-light: #5bbece;
+  --bg-light: #f5fafb;
+  --text-dark: #1e2e36;
+  --text-muted: #4a6572;
+  --white: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-primary: var(--copper);
+  --color-primary-light: var(--copper-light);
+  --color-primary-dark: var(--copper-dark);
+  --color-secondary: var(--petroleum);
+  --color-secondary-light: var(--petroleum-light);
+  --color-secondary-dark: var(--petroleum-dark);
+  --color-accent: var(--teal);
+  --color-accent-light: var(--teal-light);
+  --color-surface: var(--white);
+  --color-surface-muted: var(--bg-light);
+  --color-text-dark: var(--text-dark);
+  --color-text-muted: var(--text-muted);
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #128c7e;
+
+  --radius-card: 16px;
+  --radius-premium: 24px;
+
+  --shadow-premium: 0 8px 30px rgba(15, 59, 77, 0.08);
+  --shadow-premium-hover: 0 16px 40px rgba(15, 59, 77, 0.16);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button, input, select, textarea {
+  direction: inherit;
+  font-family: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--secondary-dark); /* Prevents overscroll white line under footer */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-cairo), "Cairo", sans-serif;
+  color: var(--text-dark);
+  background-color: var(--white);
+  direction: rtl;
+  overflow-x: hidden;
+  line-height: 1.75 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.45 !important;
+}
+
+/* Utility classes */
+.hero-section-padding {
+  padding-top: 96px;
+  padding-bottom: 56px;
+}
+.section-default-padding {
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+@media (min-width: 768px) {
+  .section-default-padding {
+    padding-top: 72px;
+    padding-bottom: 84px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-section-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Animations */
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.9; }
+  70% { transform: scale(1.15); opacity: 0; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+ 
+/* WhatsApp floating button pulse */
+@keyframes pulse-wa {
+  0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.5), 0 0 0 0 rgba(37,211,102,0.4); }
+  50% { box-shadow: 0 6px 24px rgba(37,211,102,0.5), 0 0 0 8px rgba(37,211,102,0); }
+}
+
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.3);
+  animation: pulse-ring 2s ease-out infinite;
 }
