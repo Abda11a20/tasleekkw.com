@@ -33,8 +33,8 @@ export const features: Feature[] = [
   },
   {
     id: "guarantee",
-    title: "ضمان على العمل",
+    title: "كفالة على العمل",
     icon: "ShieldCheck",
-    desc: "نضمن جودة الخدمة — رضاك التام هو هدفنا الأول",
+    desc: "كفالة لجودة الخدمة — رضاك التام هو هدفنا الأول",
   },
 ];

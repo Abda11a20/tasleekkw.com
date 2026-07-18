@@ -80,7 +80,7 @@ export default function WhyChooseUsSection() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-sm border-2 border-accent/30 bg-secondary/20">
               <Image
                 src="/ad-vertical.webp"
-                alt="شركة تسليك مجاري الكويت — خبرة وجودة وضمان"
+                alt="شركة تسليك مجاري الكويت — خبرة وجودة وكفالة"
                 width={400}
                 height={534}
                 className="w-full h-auto object-cover"

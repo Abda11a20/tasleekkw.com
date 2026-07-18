@@ -9,7 +9,7 @@ export default function Hero() {
     "خدمة سريعة",
     "أحدث المعدات",
     "أقل الأسعار",
-    "ضمان على العمل",
+    "كفالة على العمل",
   ];
 
   return (
@@ -42,7 +42,7 @@ export default function Hero() {
           <h1 className="font-black mb-4 text-white text-2xl sm:text-4xl lg:text-5xl max-w-xl">
             تسليك مجاري وبواليع{" "}
             <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
-              بالكويت
+              الكويت
             </span>
           </h1>
 
