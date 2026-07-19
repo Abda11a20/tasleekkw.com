@@ -1,0 +1,25 @@
+{
+  "name": "تسليك مجاري الكويت",
+  "short_name": "تسليككو",
+  "description": "أفضل فني تسليك مجاري في الكويت، خدمة 24 ساعة في جميع المناطق",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f1e",
+  "theme_color": "#1e3a5f",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

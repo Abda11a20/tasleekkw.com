@@ -1,14 +1,14 @@
 export const siteConfig = {
-  name: "شركة تسليك مجاري الكويت",
+  name: "تسليك مجاري الكويت",
   nameEn: "Tasleeq Kuwait",
-  url: "https://tasleeq-kuwait.vercel.app", // Temporary until domain purchase
+  url: "https://tasleekkw.com",
   phone: "69682100",
   phoneDisplay: "69682100",
   whatsapp: "96569682100", // Full WhatsApp number with country code
-  email: "info@tasleeq-kuwait.com", // Placeholder until domain setup
+  email: "info@tasleekkw.com",
   address: "الكويت",
   locale: "ar-KW",
   country: "KW",
   tagline: "خدمة 24 ساعة بأقل الأسعار - جميع مناطق الكويت",
-  description: "شركة تسليك مجاري الكويت — خدمة متخصصة على مدار 24 ساعة لتسليك المجاري وبواليع المطابخ والحمامات وكشف تسرب المياه وتنظيف الجور في جميع مناطق الكويت بأحدث المعدات وأقل الأسعار.",
+  description: "أفضل فني تسليك مجاري في الكويت، نصلك خلال 30 دقيقة. حل انسداد البالوعات، تنظيف مجاري، كشف تسريبات، وخدمات صحية شاملة في جميع مناطق الكويت بأسعار تنافسية. اتصل الآن 24 ساعة.",
 } as const;
