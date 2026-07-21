@@ -130,20 +130,19 @@ export default function FAQSection() {
                   />
                 </button>
 
-                {isOpen && (
+                <div
+                  id={`faq-answer-${faq.id}`}
+                  role="region"
+                  aria-labelledby={`faq-q-${idx + 1}`}
+                  hidden={!isOpen}
+                  className="px-5 pb-5 pt-1 text-sm leading-relaxed text-text-muted text-center"
+                >
                   <div
-                    id={`faq-answer-${faq.id}`}
-                    role="region"
-                    aria-labelledby={`faq-q-${idx + 1}`}
-                    className="px-5 pb-5 pt-1 text-sm leading-relaxed text-text-muted text-center"
-                  >
-                    <div
-                      className="h-px w-full mb-4 bg-accent/20"
-                      aria-hidden="true"
-                    ></div>
-                    {faq.answer}
-                  </div>
-                )}
+                    className="h-px w-full mb-4 bg-accent/20"
+                    aria-hidden="true"
+                  ></div>
+                  {faq.answer}
+                </div>
               </Card>
             );
           })}
