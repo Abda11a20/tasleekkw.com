@@ -75,16 +75,16 @@ export default function WhyChooseUsSection() {
             ))}
           </div>
 
-          {/* Ad Vertical Image — LEFT on desktop (secondary visual) — static stable wrapper */}
+          {/* Ad Banner Image — LEFT on desktop (secondary visual) — static stable wrapper */}
           <div className="flex justify-center order-2 lg:order-2">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-sm border-2 border-accent/30 bg-secondary/20">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-lg lg:max-w-xl border-2 border-accent/30 bg-secondary/20">
               <Image
-                src="/ad-vertical.webp"
-                alt="شركة تسليك مجاري الكويت — خبرة وجودة وكفالة"
-                width={400}
-                height={534}
+                src="/صوره الاعلان البديله.jpeg"
+                alt="خدمة تسليك مجاري وبواليع المطابخ والحمامات في الكويت — اتصل 55601295"
+                width={1408}
+                height={768}
                 className="w-full h-auto object-cover"
-                sizes="(max-width: 640px) 90vw, 400px"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
                 loading="lazy"
               />
             </div>

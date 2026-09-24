@@ -21,6 +21,18 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        source: "/:path*.jpeg",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
+        source: "/:path*.jpg",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
         source: "/:path*.ico",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
